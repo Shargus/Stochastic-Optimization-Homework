@@ -17,7 +17,7 @@ r(i,1,j) = 50 \cdot (exp(i/7)-1)
 ```
 At any time the company is capable of setting up an "emergency protocol" with stronger safety measures that decrease the probability of new infections to $1/20$. The measures in the emergency protocol have the side effect of reducing the daily income to the following values
 ```math
-r(i,2,j) = 0 \; \text{if} \quad i=0, \qquad 35 \cdot (\text{exp}(i-1)/7-1) \quad \text{otherwise}
+r(i,2,j) = 0 \quad \text{if} \; i=0, \qquad 35 \cdot (\text{exp}(i-1)/7-1) \quad \text{otherwise}
 ```
 The goal of the project is to find in which states it is optimal to adopt the standard safety protocol and in which states it is better to adopt the emergency protocol. Optimal in this context means that it maximizes the total discounted reward, using $\lambda = 0.995$ as discount factor. To this aim we ask you to use both dynamic programming and reinforcement learning (RL) to find the optimal policy and to compare the findings from the two methods.
 
