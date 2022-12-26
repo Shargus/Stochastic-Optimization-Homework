@@ -8,8 +8,8 @@ W_{n+1} = W_n - I_{n+1} + R_n
 where
 * $n$ stands for the $n$-th day
 * $W_n$ is the number of effectively working clerks (state variable)
-* $I_{n+1} (number of infected individuals) is a binomial random variable with parameters $n = W_n$ and $p = p_i$
-* $R_{n+1} (number of recovered individuals) is a binomial random variable with parameters $n = N - W_n$ and $p = p_r$
+* $I_{n+1}$ (number of infected individuals) is a binomial random variable with parameters $n = W_n$ and $p = p_i$
+* $R_{n+1}$ (number of recovered individuals) is a binomial random variable with parameters $n = N - W_n$ and $p = p_r$
 For every working day the usual income of the company is given by the following formula, depending on the number $i$ of clerks that are at work, no matter how many infections or recoveries there will be in that day
 ```math
 r(i,1,j) = 50 \cdot (exp(i/7)-1)
